@@ -109,3 +109,4 @@ stats/*.html
 .DS_Store
 
 bench/source/gen*.js
+bench/result.json

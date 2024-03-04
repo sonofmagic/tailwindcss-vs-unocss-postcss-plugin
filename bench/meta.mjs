@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import { getPackageInfo } from 'local-pkg'
-import fs from 'fs-extra'
+// import fs from 'fs-extra'
 
 export const dir = dirname(fileURLToPath(import.meta.url))
 
@@ -18,6 +18,6 @@ export async function getVersions() {
       ])
     )
   )
-  versions.unocss = (await fs.readJSON(resolve(dir, '../package.json'))).version
+  // versions.unocss = (await fs.readJSON(resolve(dir, '../package.json'))).version
   return versions
 }
