@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@unocss/core':
+    specifier: ^0.58.5
+    version: 0.58.5
   '@unocss/preset-uno':
     specifier: ^0.58.5
     version: 0.58.5

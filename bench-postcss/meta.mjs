@@ -5,9 +5,9 @@ import { getPackageInfo } from 'local-pkg'
 
 export const dir = dirname(fileURLToPath(import.meta.url))
 
-export const targets = ['none', 'windicss', 'tailwindcss', 'unocss']
+export const targets = ['none', 'tailwindcss', 'unocss']
 
-const pkgs = ['vite', 'unocss', 'windicss', 'tailwindcss']
+const pkgs = ['vite', 'unocss', 'tailwindcss']
 
 export async function getVersions() {
   const versions = Object.fromEntries(

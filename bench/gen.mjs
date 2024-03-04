@@ -55,15 +55,26 @@ export async function writeMock() {
     `document.getElementById('app').innerHTML = \`${chunk(shuffle(classes))
       .map((c) => `<div class="${c.join(' ')}" />`)
       .join('\n')}\``
+  const contentCss = () => {
+    return chunk(shuffle(classes))
+      .map(
+        (c, i) =>
+          `a${i} {
+  @apply ${c.join(' ')};
+}`
+      )
+      .join('\n')
+  }
   if (!existsSync(join(dir, 'source'))) await fs.mkdir(join(dir, 'source'))
-  await fs.writeFile(join(dir, 'source/gen1.js'), content(), 'utf-8')
-  await fs.writeFile(join(dir, 'source/gen2.js'), content(), 'utf-8')
-  await fs.writeFile(join(dir, 'source/gen3.js'), content(), 'utf-8')
+  await fs.writeFile(join(dir, 'source/gen1.js'), content(), 'utf8')
+  await fs.writeFile(join(dir, 'source/gen2.js'), content(), 'utf8')
+  await fs.writeFile(join(dir, 'source/gen3.js'), content(), 'utf8')
   await fs.writeFile(
     join(dir, 'source/gen.js'),
     'import "./gen1";import "./gen2";import "./gen3";',
-    'utf-8'
+    'utf8'
   )
+  await fs.writeFile(join(dir, 'source/gen.css'), contentCss(), 'utf8')
   return classes
 }
 

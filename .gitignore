@@ -109,4 +109,8 @@ stats/*.html
 .DS_Store
 
 bench-postcss/source/gen*.js
+bench-postcss/source/gen*.css
 bench-postcss/result.json
+bench/source/gen*.js
+bench/source/gen*.css
+bench/result.json
