@@ -1,7 +1,7 @@
 {
-  "name": "npm-lib-rollup-template",
+  "name": "tailwindcss-vs-unocss-postcss-plugin",
   "version": "0.0.0",
-  "description": "npm-lib-rollup-template",
+  "description": "tailwindcss-vs-unocss-postcss-plugin",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "types/index.d.ts",
@@ -23,7 +23,7 @@
   "packageManager": "pnpm@8.14.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sonofmagic/npm-lib-rollup-template.git"
+    "url": "https://github.com/sonofmagic/tailwindcss-vs-unocss-postcss-plugin.git"
   },
   "files": [
     "dist",
@@ -37,9 +37,9 @@
   "author": "SonOfMagic <qq1324318532@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonofmagic/npm-lib-rollup-template/issues"
+    "url": "https://github.com/sonofmagic/tailwindcss-vs-unocss-postcss-plugin/issues"
   },
-  "homepage": "https://github.com/sonofmagic/npm-lib-rollup-template#readme",
+  "homepage": "https://github.com/sonofmagic/tailwindcss-vs-unocss-postcss-plugin#readme",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^25.0.7",
