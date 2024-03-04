@@ -24,7 +24,7 @@
 
 就像我一向的观点，`unocss` 在帮助我们探索更多原子化的上限。
 
-另外我也做了一个同样基于 `postcss` 插件的基准测试，[源代码链接](https://github.com/sonofmagic/tailwindcss-vs-unocss-postcss-plugin/tree/main/bench-postcss)
+另外我也做了一个同样基于 `postcss` 插件的基准测试，`unocss` 只加载 `@unocss/preset-uno`，[源代码链接](https://github.com/sonofmagic/tailwindcss-vs-unocss-postcss-plugin/tree/main/bench-postcss)
 
 测试结果，不出所料，果然在都需要在解析抽象语法树情况下，它们的差距是非常小的：
 
@@ -43,4 +43,4 @@ windicss(参考) v3.5.6       976.14 ms / delta.    961.57 ms (x2.45)
 
 这种情况造成性能的差距，其实就在于，双方引擎中，正则表达式匹配的数量和质量了。所以从上面的测试结果相差的 `15ms` 左右，相差这点已经没有意义了，毕竟我们都知道，正则写的越多执行越慢。
 
-而 `tailwindcss` 和 `unocss` 都可以通过 `plugin` / `preset` 去添加更多的。
+而 `tailwindcss` 和 `unocss` 都可以通过 `plugin` / `preset` 去添加更多的匹配规则。
