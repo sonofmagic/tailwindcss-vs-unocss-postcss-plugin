@@ -107,3 +107,5 @@ types
 
 stats/*.html
 .DS_Store
+
+bench/source/gen*.js
